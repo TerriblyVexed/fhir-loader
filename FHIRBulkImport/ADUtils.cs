@@ -40,7 +40,7 @@ namespace FHIRBulkImport
                 using (System.Net.WebClient client = new System.Net.WebClient())
                 {
                     byte[] response =
-                     client.UploadValues("https://login.microsoftonline.com/" + tenant + "/oauth2/token", new NameValueCollection()
+                     client.UploadValues("https://login.microsoftonline.com/" + tenant + "/oauth2/v2.0/token", new NameValueCollection()
                      {
                         {"grant_type","client_credentials"},
                         {"client_id",clientid},
