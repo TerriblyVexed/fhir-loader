@@ -133,7 +133,7 @@ namespace FHIRBulkImport
                             tok["resource"]["id"] = rid;
 
                         }
-                        tok["request"]["method"] = "PUT";
+                        tok["request"]["method"] = "POST";
                         tok["request"]["url"] = $"{rt}?_id={rid}";
                     }
 

@@ -104,7 +104,7 @@ namespace FHIRBulkImport
             rv["fullUrl"] = $"{rt}/{rid}";
             rv["resource"] = tok;
             JObject req = new JObject();
-            req["method"] = "PUT";
+            req["method"] = "POST";
             req["url"] = $"{rt}?_id={rid}";
             rv["request"] = req;
             JArray entries = (JArray)bundle["entry"];
